@@ -64,6 +64,51 @@ function init() {
 inquirer.prompt(questions)
 .then(response => {
     console.log(response)
+    var readme= `
+# Title: ${response.title}
+
+## Table Of Contents
+* [License](#license)
+* [Description](#description)
+* [Installation](#installation)
+* [Contributors](#contributors)
+* [Testing](#testing)
+* [Repo](#repo)
+* [Profile](#profile)
+* [Email](#email)
+* [Usage](#usage)
+
+
+### License
+$
+![GitHub license](https://img.shields.io/badge/license-${response.license}-blue.svg)
+[For Information regarding license](https://github.com/readme/guides/open-source-licensing)
+
+### Description
+${response.description}
+
+### Installation
+${response.installation}
+
+### Contributors
+${response.contributors}
+
+### Testing
+${response.testing}
+
+### Repo
+${response.repo}
+
+### Profile
+${response.profile}
+
+### Email
+${response.email}
+
+### Usage
+${response.usage}
+    `
+    console.log(readme)
 })
 
 
