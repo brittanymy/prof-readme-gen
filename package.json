@@ -11,7 +11,7 @@
     "url": "git+https://github.com/brittanymy/prof-readme-gen.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Brittany",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/brittanymy/prof-readme-gen/issues"
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/brittanymy/prof-readme-gen#readme",
   "devDependencies": {
     "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4"
   }
 }
