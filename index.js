@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
-import { prompt } from "inquirer";
-import { writeFileSync } from "fs";
+const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
+const fs = require("fs");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -58,63 +59,17 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, response) {
+  fs.writeFile (fileName, response, err => {});
+}
 
 // TODO: Create a function to initialize app
 function init() {
-  prompt(questions)
+  inquirer.prompt(questions)
     .then((response) => {
       console.log(response);
-      var readme = `
-# Title: ${response.title}
-
-## Table Of Contents
-* [License](#license)
-* [Description](#description)
-* [Installations](#installations)
-* [Contributors](#contributors)
-* [Testing](#testing)
-* [Repo](#repo)
-* [Profile](#profile)
-* [Email](#email)
-* [Usage](#usage)
-
-### License
-$
-![GitHub license](https://img.shields.io/badge/license-${response.license}-blue.svg)
-[For Information regarding license](https://github.com/readme/guides/open-source-licensing)
-
-### Description
-${response.description}
-
-### Installations
-${response.installations}
-
-### Contributors
-${response.contributors}
-
-### Testing
-${response.testing}
-
-### Repo
-${response.repo}
-
-### Profile
-[Github Profile](https://github.com/${response.profile})
-
-### Email
-${response.email}
-
-### Usage
-${response.usage}
-    `;
-      writeFileSync("README.md", readme, function (err, data) {
-        if (err) throw err;
-      });
-      console.log(readme);
-    })
-    .catch((err) => {
-      throw err;
+      const markdown = generateMarkdown(response);
+      writeToFile ("./example_readme/README.md", markdown);
     });
 }
 
