@@ -50,11 +50,11 @@ function generateMarkdown(response) {
   ### Testing
   ${response.testing}
   
-  ### Repo
-  ${response.repo}
-  
   ### Profile
-  [Github Profile](https://github.com/${response.profile})
+  [Github Profile](https://github.com/${response.profile})  
+
+  ### Repo
+  [Github Profile](https://github.com/${response.profile}/${response.repo})
   
   ### Email
   ${response.email}

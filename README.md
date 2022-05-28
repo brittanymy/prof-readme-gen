@@ -2,7 +2,7 @@
 # Node.js Challenge: Professional README Generator
 
 ## Description
-
+With the use of node.js and npm technologies, I have created an application that allows developers to generate a README file right from their terminal. Having a high quality README is important for developer collaborations. The process in how they will create the application along with technologies used and developer contact information, gives the development of your project a higher success rate. 
 
 ## User Story
 AS A developer
@@ -30,5 +30,9 @@ THEN I am taken to the corresponding section of the README
 -   renderLicenseLink function (DONE)
 -   renderLicenseSection function (DONE)
 
-## Screenshot & Video
+## Screenshots & Video
+![README Image 1](./assets/images/readme1.png)
+![README Image 2](./assets/images/readme2.png)
+![README Image 3](./assets/images/readme3.png)
+
 

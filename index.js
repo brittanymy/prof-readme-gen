@@ -32,13 +32,13 @@ const questions = [
   },
   {
     type: "input",
-    message: "Enter Project Github Repo",
-    name: "repo",
+    message: "Enter Project Github Profile",
+    name: "profile",
   },
   {
     type: "input",
-    message: "Enter Project Github Profile",
-    name: "profile",
+    message: "Enter Project Github Repo",
+    name: "repo",
   },
   {
     type: "input",

@@ -1,5 +1,5 @@
 
-  # Title: kjadsn
+  # Title: Professional README Generator
   
   ## Table Of Contents
   * [License](#license)
@@ -16,25 +16,25 @@
   ![License](https://img.shields.io/badge/License-APACHE2.0-blue.svg)<br />https://opensource.org/licenses/APACHE2.0
   
   ### Description
-  asjkdn
+  With the use of node.js and npm technologies, I have created an application that allows developers to generate a readme from their terminal.
   
   ### Installations
-  asdnfj
+  npm, inquirer
   
   ### Contributors
-  asdnf
+  brittanymy
   
   ### Testing
-  asdn
-  
-  ### Repo
-  asdnjf
+  Testing repo generation
   
   ### Profile
-  [Github Profile](https://github.com/asdnjfa)
+  [Github Profile](https://github.com/brittanymy)  
+
+  ### Repo
+  [Github Profile](https://github.com/brittanymy/brittanymy/prof-readme-gen)
   
   ### Email
-  dsfnja
+  brittany.young2001@gmail.com
   
   ### Usage
-  nfjad
+  Allows developers to generate a readme from their terminal.
